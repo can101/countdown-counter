@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "oswald";
+  src: url(./digital-7.ttf);
+}
+html {
+  overflow-y: hidden;
+}
+body {
+  background-color: #252525;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+.counter-down-body {
+  background: url(./bg.png);
+  width: 300px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.count-down-wrapper {
+  /* background-color: aqua; */
+  font-family: oswald;
+  font-size: 45px;
+  position: relative;
+  left: 35px;
+  top: 17px;
+}
+.count-down-wrapper span {
+  display: inline;
+}
+.shadow {
+  position: absolute;
+  color: #191919;
+}
+.count-info {
+  position: absolute;
+  color: #fedd01;
+  text-align: right;
+  white-space: pre-line;
+}
+input {
+  width: 35px;
+  padding: 4px;
+  font-size: 35px;
+  border: none;
+  background: none;
+  /* border: 1px solid #eeeeee; */
+  box-shadow: 0 0 10px #191919;
+  font-family: oswald;
+  /* background-color: #fedc0198; */
+  text-align: center;
+  color: #fedd01;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+input:focus {
+  outline: none;
+  border-radius: 3px;
+  transform: scale(1.2, 1.2);
+  border: none;
+  box-shadow: none;
+  box-shadow: 0 0 8px #fedc0121;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+}
+button {
+  box-shadow: none;
+  background: none;
+  border: none;
+  font-family: oswald;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 3px 5px;
+  right: 0px;
+  margin: 10px 0 0 10px;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#reset,
+#run:hover {
+  /* border: 1px solid #221f1f; */
+  box-shadow: 0 0 8px #ffffff93;
+  background: white;
+  color: #252525;
+}
+#run,
+#reset:hover {
+  background-color: #191919;
+  box-shadow: none;
+  color: #fedd01;
+  border: 1px solid transparent;
+}

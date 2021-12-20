@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>countDown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="counter">
+    <div class="counter-down-body">
+      <div class="count-down-wrapper">
+        <span class="shadow">88:88:88:88</span>
+        <span class="count-info" id="count-info">00:00:00:00</span>
+      </div>
+    </div>
+    <button id="reset">Sifirla</button>
+  </div>
+  <div id="panel">
+    <div class="counter-down-body">
+      <div class="count-down-wrapper">
+        <div class="input-container">
+          <input type="number" class="day" min="0" max="30" value="00">
+          <input type="number" class="hour" min="0" max="60" value="00">
+          <input type="number" class="min" min="0" max="60" value="00">
+          <input type="number" class="sec" min="0" max="60" value="00">
+        </div>
+      </div>
+    </div>
+    <button id="run">calistir</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
