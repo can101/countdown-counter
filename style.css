@@ -6,7 +6,11 @@ html {
   overflow-y: hidden;
 }
 body {
-  background-color: #252525;
+  background-image: url(./zemin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+/*   //background-color: #252525; */
   height: 100vh;
   display: flex;
   flex-direction: column;
